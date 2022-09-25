@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
 
   <!-- meta tags, links to css, etc. -->
   <title>DIG 245 Everyone ♥ Math</title>
 
   <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Gochi+Hand">
 
-  </head>
-  <body>
 
-  <!-- visible content goes here -->
+</head>
+
+<body>
 
   <div class="container">
     <div class="row">
       <div class="col">
-        <h1>DIG 245 Everyone ♥ Math</h1>
+        <div class="row">
+          <h1>DIG 245 Everyone ♥ Math</h1>
+        </div>
+        <div class="row">
+          <p class="figma-link"><a
+              href="https://www.figma.com/file/KQ12Sdbgxy3B1rYllVQLyh/dig245-everyone-hearts-math?node-id=0%3A1"
+              target="_blank">Check out our wireframes!</a></p>
+        </div>
       </div>
+
     </div>
-    <div class="row">
+    <div class="row justify-content-around">
       <div class="col-4">
         <div class="introduction">
           <h1>The Meet Up Problem</h1>
-          <p>You are standing on a street, trying to find your friend who is also
-            somewhere on the same street. What is your method to go about finding
+          <p>You are standing on a street, trying to find your friend who is
+            also
+            somewhere on the same street. What is your method to go about
+            finding
             your friend? Select one of the following algorithms below to see the
             runtime of your solution.</p>
         </div>
@@ -50,12 +67,15 @@
             <div class="row">
               <div class="col-5">
                 <label for="solutions"> Take a guess:</label>
-                <select name = "solutions" id = "solutions">
-                  <option value="left">left</option>
-                  <option value="both">left then right</option>
-                  <option value="incr1">inbrement by 1</option>
-                  <option value="double">double the distance every iteration</option>
-                  <option value="square">square the distance every iteration</option>
+                <select name="solutions" id="solutions">
+                  <option value="0" selected></option>
+                  <option value="1">left</option>
+                  <option value="2">left then right</option>
+                  <option value="3">increment by 1</option>
+                  <option value="4">double the distance every iteration
+                  </option>
+                  <option value="5">square the distance every iteration
+                  </option>
                 </select>
               </div>
               <div class="dividers1"></div>
@@ -65,37 +85,52 @@
         </div>
 
       </div>
-
+      <div class="col-4">
+        <div class="row">
+          <div class="row">
+            <h1 style="text-decoration:underline ">Solutions!</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h4>Your Solution</h4>
+            </div>
+            <div class="col">
+              <h4>Optimal Solution</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p class="selected-solution-description"></p>
+            </div>
+            <div class="col">
+              <p class="optimal-solution-description"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="selected-solution"></div>
+            </div>
+            <div class="col">
+              <div class="optimal-solution" id="optimal-solution"> </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-    <!-- <button class="clickme btn btn-info">Click me!</button>
-
-
-    <form>
-
-      <div class="row">
-        <div class="col-9">
-          <input type="text" class="username">
-        </div>
-        <div class="col-3">
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-      </div>
-
-      <div class="output">
-
-      </div>
-
-    </form> -->
-
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script>
   <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
   <script src="assets/js/main.js"></script>
 
 
-  </body>
+</body>
+
 </html>
