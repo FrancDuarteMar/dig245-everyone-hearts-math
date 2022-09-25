@@ -1,28 +1,35 @@
-
 /* javascript */
-// $("h1").hide();
 
-$(".click-me").click(function(e) { 
-    console.log("Clicked the button",e);
-    
+// $("h1").hide();
+$(".clickme").click(function(eventObject){
+  console.log("hello!", eventObject);
 });
 
 let username = "";
-let requiredUsername = "secret"
+let requiredUsername = "secret";
 
-$("form").submit(function (e) { 
-    e.preventDefault();
-    username = $(".username").val();   
-    console.log(username);
+$("form").submit(function(e){
+  e.preventDefault();
+  username = $(".username").val();
+  console.log(username);
 
-    let str = ""
-    if(username == requiredUsername){
-        str=`<div class="alert alert-success" role="alert">
-        Welcome!</div>`;
-    }
-    else{
-        str =`<div class="alert alert-danger" role="alert"> Danger! </div>`;
-    }
-    
-    $(".output").html(str);
+
+let str = "";
+
+if (username == requiredUsername){
+  str = `
+  <div class="alert alert-success" role="alert">
+  Welcome, friend.
+  </div>`;
+}
+else {
+  str = `
+  <div class="alert alert-danger" role="alert">
+  Not allowed.
+  </div>`;
+}
+
+
+$(".output").html(str);
+
 });
