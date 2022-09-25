@@ -1,5 +1,12 @@
 /* css */
-
+@font-face {
+  font-family: "chalkFont";
+  src: url("https://get.fontspace.co/download/font/r78L/MWM0NzE3NjZhNTFiNDQ1Y2I1M2FhODI3MTliMDVkNGYudHRm/Chalktastic-r78L.ttf");
+  }
+  @font-face {
+    font-family: "Bitstream Vera Serif Bold";
+    src: url("https://mdn.github.io/css-examples/web-fonts/VeraSeBd.ttf");
+  }
 body, head {
   /* background-color: black; */
   color: white;
@@ -40,4 +47,8 @@ body, head {
   top: -2px;
   left: 80%;
   display: inline-block;
+}
+
+body{
+  font-family: Gochi Hand;
 }
