@@ -25,6 +25,7 @@ $('#solutions').on('change', function (e) {
       "background-color": "",
       "position": ""
     });
+    console.log("User has not selected an option!");
   } else if (selectionIndex == 1) {
     $(".optimal-solution-description").html("This is the shortest path guaranteed to find your friend");
     $(".selected-solution-description").html("But... you might not find your friend");
@@ -41,6 +42,7 @@ $('#solutions').on('change', function (e) {
       "background-color": "red",
       "position": "relative"
     });
+    console.log("This corresponds to O(L) runtime! Not a correct algorithm!")
 
   } else if (selectionIndex == 2) {
     $(".optimal-solution-description").html("This is the shortest path!");
@@ -59,6 +61,7 @@ $('#solutions').on('change', function (e) {
       "background-color": "green",
       "position": "relative"
     });
+    console.log("This corresponds to O(N*3L) runtime!")
   } else if (selectionIndex == 3) {
     $(".optimal-solution-description").html("This is the shortest path!");
     $(".selected-solution-description").html("Good luck with your walk!");
@@ -91,6 +94,7 @@ $('#solutions').on('change', function (e) {
       "background-color": "green",
       "position": "relative"
     });
+    console.log("This corresponds to O(N) runtime! Its the optimal algorithm!")
   } else if (selectionIndex == 5) {
     $(".optimal-solution-description").html("This is the shortest path!");
     $(".selected-solution-description").html("Almost but not quite!");
@@ -107,6 +111,7 @@ $('#solutions').on('change', function (e) {
       "background-color": "green",
       "position": "relative"
     });
+    console.log("This corresponds to O(N +L) runtime! Its almost the best but not quite")
   }
 
 });
