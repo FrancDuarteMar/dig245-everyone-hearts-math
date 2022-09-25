@@ -1,9 +1,17 @@
 /* javascript */
 let selectionIndex = 0;
 
-$('#solutions').on('change', function(){
-  selectionIndex = $("#solutions").val();
-
+$('#solutions').on('click', function(e){
+  // var sel = document.getElementById("solutions");
+  var sel = $("#solutions")
+  selectionIndex = sel.val();
+  selection= $("#solutions :selected").text();
+  // var optimalSol = document.getElementById("optimal-solution");
+  console.log("Index " +selectionIndex);
+  // e.preventDefault();
+  // selectionIndex = sel.value
+  // $('#solutions').val($(this).text());
+  // selection = sel.options[sel.selectedIndex].text;
   var maxWidth = $(".streetVisual").width();
 
     if(selectionIndex == 0){
@@ -32,7 +40,7 @@ $('#solutions').on('change', function(){
       $(".optimal-solution-description").html("This is the shortest path!");
       $(".selected-solution-description").html("Almost but not quite!");
 
-      $(".selected-solution").css({"height":maxWidth+(maxWidth*1/8),
+      $(".selected-solution").css({"height":maxWidth+(maxWidth*7/8),
         "width":"5px", "background-color":"red","position":"relative"});
       $("#optimal-solution").css({"height":maxWidth,
         "width":"5px", "background-color":"green","position":"relative"});
@@ -59,7 +67,7 @@ $('#solutions').on('change', function(){
       $(".optimal-solution-description").html("This is the shortest path!");
       $(".selected-solution-description").html("Eh, you still had to walk a while");
 
-      $(".selected-solution").css({"height":maxWidth+(maxWidth*7/8),
+      $(".selected-solution").css({"height":maxWidth+(maxWidth*1/8),
         "width":"5px", "background-color":"red","position":"relative"});
       $("#optimal-solution").css({"height":maxWidth,
         "width":"5px", "background-color":"green","position":"relative"});
