@@ -6,7 +6,7 @@ let selectionIndex = 0;
 let optimalSol = document.getElementById("optimal-solution")
 // let maxWidth = document.getElementsByClassName("streetVisual").offsetWidth;
 
-$('#solutions').on('click', function(e){
+$('#solutions').on('change', function(e){
   // var sel = document.getElementById("solutions");
   var sel = $("#solutions")
   selectionIndex = sel.val();
@@ -43,9 +43,9 @@ $('#solutions').on('click', function(e){
     }
     else if(selectionIndex == 2){
       $(".optimal-solution-description").html("This is the shortest path!")
-      $(".selected-solution-description").html("Almost but not quite!")
+      $(".selected-solution-description").html("Eh, you still had to walk a while")
 
-      $(".selected-solution").css({"height":maxWidth+(maxWidth*1/8),
+      $(".selected-solution").css({"height":maxWidth+(maxWidth*7/8),
         "width":"5px", "background-color":"red","position":"relative"});
       $("#optimal-solution").css({"height":maxWidth,
         "width":"5px", "background-color":"green","position":"relative"});
@@ -70,9 +70,9 @@ $('#solutions').on('click', function(e){
     }
     else if(selectionIndex == 5){
       $(".optimal-solution-description").html("This is the shortest path!")
-      $(".selected-solution-description").html("Eh, you still had to walk a while")
+      $(".selected-solution-description").html("Almost but not quite!")
 
-      $(".selected-solution").css({"height":maxWidth+(maxWidth*7/8),
+      $(".selected-solution").css({"height":maxWidth+(maxWidth*1/8),
         "width":"5px", "background-color":"red","position":"relative"});
       $("#optimal-solution").css({"height":maxWidth,
         "width":"5px", "background-color":"green","position":"relative"});
