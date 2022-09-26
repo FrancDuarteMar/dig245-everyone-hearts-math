@@ -37,6 +37,7 @@ body, head {
   top: -2px;
   left: 20%;
   display: inline-block;
+  z-index: 5;
 }
 .friend{
   background-color: #FE5757;
@@ -47,6 +48,8 @@ body, head {
   top: -2px;
   left: 80%;
   display: inline-block;
+  z-index:2;
+  
 }
 
 body{
